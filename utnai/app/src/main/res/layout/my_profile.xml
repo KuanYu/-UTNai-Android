@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/toolbarProfile"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/color_base"
+        android:elevation="2dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:padding="8dp"
+            android:src="@drawable/ic_arrow_back"
+            android:background="?attr/selectableItemBackground"/>
+
+        <TextView
+            android:id="@+id/textProfile"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textSize="16sp"
+            android:text="Profile"
+            android:typeface="monospace"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:padding="8dp"/>
+
+        <ImageView
+            android:id="@+id/btnSave"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:padding="8dp"
+            android:src="@drawable/ic_check"
+            android:background="?attr/selectableItemBackground"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:padding="3dp"
+                android:layout_gravity="center"
+                android:background="@drawable/border_profile">
+
+                <ImageView
+                    android:id="@+id/imageProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btnName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_under_line"
+                android:drawableLeft="@drawable/ic_assignment_ind"
+                android:drawablePadding="10dp"
+                android:gravity="center|start"
+                android:typeface="monospace"
+                android:padding="9dp"
+                android:text="Name"
+                android:textColor="@color/grey_900"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/btnBirthDay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/bg_under_line"
+                android:drawableLeft="@drawable/ic_event"
+                android:drawablePadding="10dp"
+                android:gravity="center|start"
+                android:padding="9dp"
+                android:typeface="monospace"
+                android:text="BirthDay"
+                android:textColor="@color/grey_900"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/btnCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/bg_under_line"
+                android:drawableLeft="@drawable/ic_location_pink"
+                android:drawablePadding="10dp"
+                android:gravity="center|start"
+                android:padding="9dp"
+                android:typeface="monospace"
+                android:text="City"
+                android:textColor="@color/grey_900"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/btnEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/bg_under_line"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawablePadding="10dp"
+                android:gravity="center|start"
+                android:padding="9dp"
+                android:typeface="monospace"
+                android:text="Email"
+                android:textColor="@color/grey_900"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/btnPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/bg_under_line"
+                android:drawableLeft="@drawable/ic_phone_android"
+                android:drawablePadding="10dp"
+                android:gravity="center|start"
+                android:padding="9dp"
+                android:typeface="monospace"
+                android:text="Phone"
+                android:textColor="@color/grey_900"
+                android:textSize="14sp" />
+
+
+            <EditText
+                android:id="@+id/btnEditPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/bg_under_line"
+                android:drawableLeft="@drawable/ic_phone_android"
+                android:drawablePadding="10dp"
+                android:gravity="center|start"
+                android:padding="9dp"
+                android:typeface="monospace"
+                android:hint="Enter Phone Number"
+                android:textColorHint="@color/grey"
+                android:inputType="phone"
+                android:textColor="@color/grey_900"
+                android:textSize="14sp"
+                android:textCursorDrawable="@drawable/color_cursor"/>
+
+
+            <TextView
+                android:id="@+id/btnGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/bg_under_line"
+                android:drawableLeft="@drawable/ic_genders"
+                android:drawablePadding="10dp"
+                android:gravity="center|start"
+                android:padding="9dp"
+                android:text="Gender"
+                android:textColor="@color/grey_900"
+                android:textSize="14sp"
+                android:typeface="monospace" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

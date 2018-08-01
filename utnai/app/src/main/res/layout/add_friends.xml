@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.butions.utnai.AddFriends">
+
+    <RelativeLayout
+        android:id="@+id/toolbarAddFriends"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/color_base"
+        android:elevation="2dp">
+
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:padding="8dp"
+            android:src="@drawable/ic_arrow_back"
+            android:background="?attr/selectableItemBackground"/>
+
+        <TextView
+            android:id="@+id/textAddFriends"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Add Friends"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/text_search"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toLeftOf="@+id/icon_search"
+        android:paddingLeft="15dp"
+        android:typeface="monospace"
+        android:paddingRight="10dp"
+        android:textColorHint="@color/grey"
+        android:textColor="@color/Black"
+        android:hint="Find Friends..."
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:maxLength="20"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:background="@drawable/bg_white_stroke_red_radia50"
+        android:layout_below="@+id/toolbarAddFriends"
+        android:elevation="4dp"/>
+
+    <ImageView
+        android:id="@+id/icon_search"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/toolbarAddFriends"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_search_full"
+        android:background="?attr/selectableItemBackground"/>
+
+    <TextView
+        android:id="@+id/text_no_fond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User not found"
+        android:textSize="16sp"
+        android:textColor="@color/grey"
+        android:layout_below="@+id/text_search"
+        android:gravity="center"
+        android:padding="50dp"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/layout_find_friends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/text_search"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_user"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/name_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Name"
+            android:textSize="16sp"
+            android:textColor="@color/red"
+            android:gravity="center"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/btnAddFriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:text="Add Friend"
+            android:textSize="14sp"
+            android:textColor="@color/green"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_button_green"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

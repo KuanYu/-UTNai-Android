@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryDark">@color/red</item>
+        <item name="colorAccent">@color/red</item>
+    </style>
+
+    <style name="MySwitch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/green</item>
+        <item name="colorSwitchThumbNormal">@color/red</item>
+        <item name="android:colorForeground">@color/red</item>
+    </style>
+
+    <style name="MySwitch.text" parent="Theme.AppCompat.Light">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">9dp</item>
+    </style>
+
+    <style name="Theme_DatePickerDialog" parent="Theme.AppCompat.DayNight.Dialog.Alert">
+        <item name="android:windowBackground">@color/white_alpha_169</item>
+        <item name="colorAccent">@color/Red</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <!--<item name="android:windowBackground">@drawable/background_window</item>-->
+        <!--<item name="android:colorBackground">@drawable/background_login</item>-->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryDark">@color/black</item>
+    </style>
+
+</resources>

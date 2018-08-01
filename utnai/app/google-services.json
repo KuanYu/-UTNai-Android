@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "423334907660",
+    "firebase_url": "https://utnai-169809.firebaseio.com",
+    "project_id": "utnai-169809",
+    "storage_bucket": "utnai-169809.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:423334907660:android:24d9a99dd7a85ec2",
+        "android_client_info": {
+          "package_name": "com.butions.utnai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "423334907660-nvli4304keergc22rh55s8ofnf4utp3f.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "423334907660-rg76vd3vo9m7fl34to2tpa3fpkqgener.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRjYxJzl6eJ6DDtUL10GUAZibJ8y3hcqE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

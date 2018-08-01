@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:id="@+id/space_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@color/black"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignEnd="@+id/space_image"
+        android:layout_alignRight="@+id/space_image"
+        android:layout_alignBottom="@+id/space_image"/>
+
+    <TextView
+        android:id="@+id/title_name"
+        android:textSize="13sp"
+        android:textColor="@color/black"
+        android:text="name"
+        android:maxLines="1"
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/space_image"
+        android:layout_toLeftOf="@+id/time"
+        android:layout_marginRight="10dp"/>
+
+
+    <TextView
+        android:id="@+id/time"
+        android:textSize="10sp"
+        android:textColor="@color/grey"
+        android:text="00:00"
+        android:layout_marginTop="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/text_message"
+        android:textSize="13sp"
+        android:textColor="@color/grey_500"
+        android:text="text message"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/space_image"
+        android:layout_below="@id/title_name" />
+
+</RelativeLayout>

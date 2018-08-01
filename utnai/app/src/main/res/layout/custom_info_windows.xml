@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:clickable="false"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/rectangle_bubble"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/infowindows2"
+        android:layout_marginBottom="2dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:clickable="true">
+
+        <RelativeLayout
+            android:id="@+id/space_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:visibility="visible"
+                android:src="@drawable/ic_account_circle" />
+
+            <ProgressBar
+                android:id="@+id/image_loading"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:padding="8dp"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:indeterminateDrawable="@drawable/progressbar_indeterminate" />
+
+            <ImageButton
+                android:id="@+id/play"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:padding="15dp"
+                android:visibility="visible"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_play"/>
+
+            <RelativeLayout
+                android:id="@+id/space_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/image"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="12sp"
+                    android:textAllCaps="false"
+                    android:text="Loading"
+                    android:padding="3dp"
+                    android:typeface="monospace"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:clickable="false"/>
+
+                <ProgressBar
+                    android:id="@+id/title_loading"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_toRightOf="@+id/title"
+                    android:layout_gravity="center"
+                    android:layout_centerVertical="true"
+                    android:indeterminateDrawable="@drawable/progressbar_indeterminate" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/checkIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey_500"
+                android:textSize="8sp"
+                android:paddingLeft="5dp"
+                android:textAllCaps="false"
+                android:drawableLeft="@drawable/ic_location_on_mini"
+                android:drawablePadding="3dp"
+                android:text="-Check in"
+                android:visibility="visible"
+                android:typeface="monospace"
+                android:gravity="start"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="false"
+                android:layout_toRightOf="@+id/image"
+                android:layout_below="@+id/space_title"/>
+
+            <ImageView
+                android:id="@+id/image_feeling"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="5dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="false"
+                android:layout_toRightOf="@+id/image"
+                android:layout_below="@+id/checkIn"
+                android:src="@drawable/ic_emotion_mini"/>
+
+            <TextView
+                android:id="@+id/feeling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey_500"
+                android:textSize="8sp"
+                android:paddingLeft="4dp"
+                android:layout_marginTop="3dp"
+                android:textAllCaps="false"
+                android:text="-Feeling Happy"
+                android:visibility="visible"
+                android:typeface="monospace"
+                android:gravity="start"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="false"
+                android:layout_toRightOf="@+id/image_feeling"
+                android:layout_below="@+id/checkIn"/>
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey_500"
+                android:layout_marginTop="3dp"
+                android:textSize="8sp"
+                android:paddingLeft="5dp"
+                android:textAllCaps="false"
+                android:drawableLeft="@drawable/ic_phone_android_mini"
+                android:drawablePadding="3dp"
+                android:text="-By Android"
+                android:visibility="visible"
+                android:typeface="monospace"
+                android:gravity="start"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="false"
+                android:layout_toRightOf="@+id/image"
+                android:layout_below="@+id/image_feeling"/>
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey_500"
+                android:textSize="8sp"
+                android:textAllCaps="false"
+                android:text="00-00-00"
+                android:drawableLeft="@drawable/ic_date"
+                android:drawablePadding="5dp"
+                android:visibility="visible"
+                android:typeface="monospace"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="false"
+                android:layout_below="@+id/phone"
+                android:layout_toRightOf="@+id/image"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/space_all">
+
+            <LinearLayout
+                android:id="@+id/btnPost"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:paddingTop="5dp"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/imagePost"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:layout_gravity="center"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_more_horiz"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/btnChat"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:paddingTop="5dp"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/imageChat"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_chat"
+                    android:tint="@color/grey_186"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+<g>
+	<g opacity="0.8">
+		<image overflow="visible" width="428" height="563" xlink:href="7B9FF988.png"  transform="matrix(1 0 0 1 42 -27)">
+		</image>
+	</g>
+	<path fill="#FFFFFF" d="M387.259,183.368c0,72.483-58.77,131.257-131.263,131.257c-72.484,0-131.253-58.774-131.253-131.257
+		c0-72.5,58.76-131.258,131.253-131.258S387.259,110.868,387.259,183.368z"/>
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="87.8193" y1="45.3545" x2="422.3966" y2="379.9317">
+		<stop  offset="0" style="stop-color:#FF2CA2"/>
+		<stop  offset="1" style="stop-color:#B574B0"/>
+	</linearGradient>
+	<path fill="url(#SVGID_1_)" d="M381.683,57.684c-69.413-69.41-181.951-69.41-251.365,0
+		c-60.915,60.924-68.368,155.062-22.358,224.11C114.38,291.419,256,495.069,256,495.069s141.618-203.641,148.03-213.263
+		C450.05,212.762,442.608,118.612,381.683,57.684z M255.997,306.741c-68.13,0-123.369-55.245-123.369-123.373
+		c0-68.146,55.229-123.374,123.369-123.374s123.377,55.228,123.377,123.374C379.374,251.497,324.136,306.741,255.997,306.741z"/>
+	<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="109.3496" y1="24.1074" x2="443.1536" y2="357.9114">
+		<stop  offset="0" style="stop-color:#FF2CA2"/>
+		<stop  offset="1" style="stop-color:#B574B0"/>
+	</linearGradient>
+	<path fill="url(#SVGID_2_)" d="M285,199.298c0,24.476-9.278,36.713-28.729,36.713c-19.813,0-29.271-12.674-29.271-38.025V107h-36
+		v90.55c0,45.966,20.974,68.949,63.516,68.949c43.855,0,65.484-23.53,65.484-70.588V107h-35V199.298z"/>
+</g>
+<rect fill="none" width="512" height="512"/>
+<rect fill="none" width="512" height="512"/>
+</svg>

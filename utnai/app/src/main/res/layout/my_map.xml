@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.butions.utnai.MapWrapperLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/map_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/toolbarMap"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/color_base"
+        android:elevation="2dp">
+
+        <TextView
+            android:id="@+id/text_utnai"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="UTNai"
+            android:textSize="16sp"
+            android:typeface="monospace"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/btnSavePost"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:padding="8dp"
+            android:src="@drawable/ic_check"
+            android:background="?attr/selectableItemBackground"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarMap"
+        android:layout_above="@+id/footbarMap">
+
+        <fragment
+            android:id="@+id/content_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.google.android.gms.maps.MapFragment" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/toolbarNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_navigate_bar"
+        android:layout_below="@+id/toolbarMap"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/myCode"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textColor="@color/Black"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:typeface="monospace"
+            android:background="@drawable/bg_my_code"
+            android:layout_weight="0.8"/>
+
+        <EditText
+            android:id="@+id/searchCode"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:hint="Your friend Code... "
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:text=""
+            android:inputType="textCapCharacters"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:typeface="monospace"
+            android:background="@drawable/bg_search_friend_code"
+            android:layout_weight="1.85"/>
+
+        <ImageView
+            android:id="@+id/btnNavigate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/ic_near"
+            android:background="@color/transparent"
+            android:layout_weight="0.35" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btnHideNavigate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hide Navigate"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:padding="5dp"
+        android:typeface="monospace"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="1dp"
+        android:background="@drawable/bg_hide_navigate_bar"
+        android:layout_below="@+id/toolbarNavigation">
+
+    </TextView>
+
+
+    <RelativeLayout
+        android:id="@+id/space_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarMap"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <FrameLayout
+            android:id="@+id/content_framelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:background="@null">
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/icon_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_my_location"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/footbarMap"
+        app:backgroundTint="@color/white_alpha_169"
+        android:visibility="gone"
+        app:elevation="4dp"/>
+
+    <LinearLayout
+        android:id="@+id/footbarMap"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/color_base_footer"
+        android:visibility="visible"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:weightSum="4">
+
+
+        <ImageView
+            android:id="@+id/btnFeedFriend"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_feed"
+            android:visibility="gone"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/btnHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:src="@drawable/ic_home_full"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"/>
+
+
+        <ImageView
+            android:id="@+id/btnFriend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:src="@drawable/ic_friends"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"/>
+
+
+        <ImageView
+            android:id="@+id/btnPost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@drawable/ic_add_utnai"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"/>
+
+        <ImageView
+            android:id="@+id/btnFeed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:src="@drawable/ic_person"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer_navigate"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:focusableInTouchMode="true">
+
+        <RelativeLayout
+            android:id="@+id/space_navigate"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="23dp"
+            android:padding="16dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/btnCancel"
+                android:text=""
+                android:textColor="@color/black"
+                android:typeface="monospace"
+                android:textSize="16sp"/>
+
+
+            <TextView
+                android:id="@+id/distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/duration"
+                android:layout_toLeftOf="@+id/btnCancel"
+                android:text=""
+                android:textColor="@color/grey"
+                android:typeface="monospace"
+                android:textSize="14sp"/>
+
+
+            <TextView
+                android:id="@+id/start_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/distance"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:maxLines="3"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/ic_my_location"
+                android:layout_toLeftOf="@+id/btnCancel"
+                android:drawablePadding="5dp"
+                android:textColor="@color/grey"
+                android:typeface="monospace"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:id="@+id/btnCancel"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/distance"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_clear"
+                android:tint="@color/grey_cc"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:id="@+id/btnStartNavigate"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/bg_circle"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_navigation"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</com.butions.utnai.MapWrapperLayout>

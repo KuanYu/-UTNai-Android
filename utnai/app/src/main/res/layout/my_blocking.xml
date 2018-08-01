@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/toolbarBlocking"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/color_base"
+        android:elevation="2dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:padding="8dp"
+            android:src="@drawable/ic_arrow_back"
+            android:background="?attr/selectableItemBackground"/>
+
+        <TextView
+            android:id="@+id/textToolbarBlocking"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Blocking"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/text_search"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="15dp"
+        android:typeface="monospace"
+        android:paddingRight="10dp"
+        android:textColorHint="@color/grey"
+        android:textColor="@color/Black"
+        android:hint="Search..."
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:maxLength="20"
+        android:drawableRight="@drawable/ic_search"
+        android:cursorVisible="true"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:background="@drawable/bg_white_stroke_red_radia50"
+        android:layout_below="@+id/toolbarBlocking"
+        android:elevation="4dp"/>
+
+    <ListView
+        android:id="@+id/my_list_friends"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/text_search"
+        android:divider="@null">
+</ListView>
+
+</RelativeLayout>

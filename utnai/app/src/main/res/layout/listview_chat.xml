@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/list_chat_right"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/customListChat_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/text_message_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:text="text"
+                android:gravity="start"
+                android:paddingLeft="15dp"
+                android:paddingRight="23dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/bubble_right"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/Black" />
+
+
+            <RelativeLayout
+                android:id="@+id/space_image_right"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:id="@+id/text_message_image_right"
+                    android:layout_width="220dp"
+                    android:layout_height="220dp"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"/>
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/progressBar_right"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:indeterminateDrawable="@drawable/progressbar_indeterminate"/>
+
+                <ImageView
+                    android:id="@+id/text_video_play_right"
+                    android:layout_width="220dp"
+                    android:layout_height="220dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="80dp"
+                    android:visibility="gone"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_play"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/timeChat_right"
+            android:text="time"
+            android:textColor="#c2c1c1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:typeface="monospace"
+            android:layout_below="@+id/customListChat_right"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="2dp"
+            android:layout_alignParentRight="true" />
+
+        <ImageView
+            android:id="@+id/readChat_left"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/timeChat_right"
+            android:layout_below="@+id/customListChat_right"
+            android:src="@drawable/ic_eye"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/list_chat_left"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/customListChat_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/imageViewLeft"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:scaleType="centerCrop"
+                android:paddingTop="2dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/text_message_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="23dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="14sp"
+                android:text="test"
+                android:gravity="start"
+                android:typeface="monospace"
+                android:layout_toRightOf="@+id/imageViewLeft"
+                android:background="@drawable/bubble_left"
+                android:textColor="@color/Black"/>
+
+            <RelativeLayout
+                android:id="@+id/space_image_left"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_toRightOf="@+id/imageViewLeft"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp">
+
+                <ImageView
+                    android:id="@+id/text_message_image_left"
+                    android:layout_width="220dp"
+                    android:layout_height="220dp"
+                    android:visibility="gone"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/progressBar_left"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:indeterminateDrawable="@drawable/progressbar_indeterminate"/>
+
+                <ImageView
+                    android:id="@+id/text_video_play_left"
+                    android:layout_width="220dp"
+                    android:layout_height="220dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="80dp"
+                    android:visibility="gone"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_play"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/timeChat_left"
+            android:text="time"
+            android:textColor="#c2c1c1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:typeface="monospace"
+            android:layout_below="@+id/customListChat_left"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="58dp"
+            android:layout_marginBottom="2dp"
+            android:layout_alignParentLeft="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

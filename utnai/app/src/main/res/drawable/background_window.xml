@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:drawable="@drawable/background_login"
+        android:gravity="center" />
+
+    <item android:drawable="@drawable/utnai"
+        android:gravity="center_horizontal"
+        android:top="60dp"
+        android:height="200dp"
+        android:width="200dp"/>
+
+    <item android:drawable="@drawable/line"
+        android:left="45dp"
+        android:right="45dp"
+        android:top="275dp"
+        android:width="300dp"
+        android:height="3dp"
+        android:gravity="center_horizontal"/>
+
+    <item android:drawable="@drawable/background_care_about_you"
+        android:left="45dp"
+        android:right="45dp"
+        android:top="285dp"
+        android:width="300dp"
+        android:height="45dp"
+        android:gravity="center_horizontal"/>
+
+</layer-list>

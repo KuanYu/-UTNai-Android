@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context="com.butions.utnai.MySetting"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/toolbarSetting"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/color_base"
+        android:elevation="2dp">
+
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:padding="8dp"
+            android:src="@drawable/ic_arrow_back"
+            android:background="?attr/selectableItemBackground"/>
+
+        <TextView
+            android:id="@+id/textSetting"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Setting"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.8">
+
+                <TextView
+                    android:id="@+id/btnMyLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:drawableLeft="@drawable/ic_location_on"
+                    android:drawablePadding="20dp"
+                    android:gravity="center|start"
+                    android:padding="10dp"
+                    android:text="My Location"
+                    android:textColor="@color/grey_900"
+                    android:textSize="14sp"
+                    android:typeface="monospace" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_gravity="center"
+                android:layout_weight="0.2">
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switch_on_map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:theme="@style/MySwitch"
+                    app:switchTextAppearance="@style/MySwitch.text"
+                    app:showText="true"
+                    android:textOn="ON"
+                    android:textOff="OFF"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:drawableLeft="@drawable/ic_profile"
+            android:drawablePadding="20dp"
+            android:textColor="@color/grey_900"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:gravity="center|start"
+            android:typeface="monospace"
+            android:layout_gravity="center"
+            android:background="@color/white"/>
+
+        <TextView
+            android:id="@+id/btnDevice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Devices"
+            android:drawableLeft="@drawable/ic_device"
+            android:drawablePadding="20dp"
+            android:textColor="@color/grey_900"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:gravity="center|start"
+            android:typeface="monospace"
+            android:layout_gravity="center"
+            android:background="@color/white"/>
+
+
+        <TextView
+            android:id="@+id/btnNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notification"
+            android:drawableLeft="@drawable/ic_notifications"
+            android:drawablePadding="20dp"
+            android:textColor="@color/grey_900"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:gravity="center|start"
+            android:typeface="monospace"
+            android:layout_gravity="center"
+            android:background="@color/white"/>
+
+
+        <TextView
+            android:id="@+id/btnBlocking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Blocking"
+            android:drawableLeft="@drawable/ic_unblock"
+            android:drawablePadding="20dp"
+            android:textColor="@color/grey_900"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:gravity="center|start"
+            android:typeface="monospace"
+            android:layout_gravity="center"
+            android:background="@color/white"/>
+
+
+        <TextView
+            android:id="@+id/btnLanguages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Languages"
+            android:drawableLeft="@drawable/ic_language"
+            android:drawablePadding="20dp"
+            android:textColor="@color/grey_900"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:gravity="center|start"
+            android:typeface="monospace"
+            android:layout_gravity="center"
+            android:background="@color/white"/>
+
+
+        <TextView
+            android:id="@+id/btnHelp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Help"
+            android:drawableLeft="@drawable/ic_help_black"
+            android:drawablePadding="20dp"
+            android:textColor="@color/grey_900"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:typeface="monospace"
+            android:gravity="center|start"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:background="@color/grey_208"/>
+
+
+        <TextView
+            android:id="@+id/btnAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:drawableLeft="@drawable/ic_info"
+            android:drawablePadding="20dp"
+            android:textColor="@color/grey_900"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:gravity="center|start"
+            android:typeface="monospace"
+            android:layout_gravity="center"
+            android:background="@color/white"/>
+
+
+        <TextView
+            android:id="@+id/btnPrivacyPolicy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Privacy &amp; Policy"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="20dp"
+            android:textColor="@color/grey_900"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:gravity="center|start"
+            android:typeface="monospace"
+            android:layout_gravity="center"
+            android:background="@color/white"/>
+
+
+        <TextView
+            android:id="@+id/btnLogOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Log Out"
+            android:drawableLeft="@drawable/ic_logout"
+            android:textColor="@color/red2"
+            android:drawablePadding="15dp"
+            android:textSize="14sp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:typeface="monospace"
+            android:gravity="center|start"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_button_logout"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

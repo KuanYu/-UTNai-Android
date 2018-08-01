@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/toolbarSetting"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/color_base"
+        android:elevation="2dp">
+
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:padding="8dp"
+            android:src="@drawable/ic_arrow_back"
+            android:background="?attr/selectableItemBackground"/>
+
+        <TextView
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textSize="16sp"
+            android:typeface="monospace"
+            android:text="Privacy Policy"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:padding="8dp"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="15dp">
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="UTNai"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/UTNaiDetail"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:text="@string/personalTitle"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/personalDetail"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/title3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:text="@string/collectTitle"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/collectDetail"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/title4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:text="@string/informationTitle"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/informationDetail"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/title5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:text="@string/protectTitle"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/protectDetail"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/title6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:text="@string/cookiesTitle"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/cookiesDetail"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+
+            <TextView
+                android:id="@+id/title7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:text="@string/cookiesTitle2"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/text7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/cookiesDetail2"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+
+            <TextView
+                android:id="@+id/title8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:text="@string/browserTitle"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/text8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/browserDetail"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+
+            <TextView
+                android:id="@+id/title9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:text="@string/thirdPartyDisclosureTitle"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/text9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/thirdPartyDisclosureDetail"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+
+            <TextView
+                android:id="@+id/title10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:text="@string/thirdPartyLinksTitle"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/text10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/thirdPartyLinksDetail"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/title11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:text="@string/californiaTitle"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/text11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/californiaDetail"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+
+            <TextView
+                android:id="@+id/title12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:text="@string/accordingTitle"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/text12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/accordingDetail"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+
+            <TextView
+                android:id="@+id/title13"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:text="@string/signalsTitle"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/text13"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/signalsDetail"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/title14"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:text="@string/trackingTitle"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/text14"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/trackingDetail"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/title15"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:text="@string/coppaTitle"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/text15"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/coppaDetail"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/title16"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:text="@string/inOrderTitle"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/text16"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/inOrderDetail"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/title17"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:text="@string/californiaTitle"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/text17"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/californiaDetail"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/title18"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:text="@string/fairInformationTitle"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/text18"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/fairInformationDetail"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+
+            <TextView
+                android:id="@+id/title19"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:text="@string/inOderFairInformationTitle"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/text19"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/inOderFairInformationDetail"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/title20"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:text="@string/canSpamActTitle"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/text20"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/canSpamActDetail"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+
+            <TextView
+                android:id="@+id/title21"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:text="@string/collectCanSpamActTitle"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/text21"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/collectCanSpamActDetail"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+
+            <TextView
+                android:id="@+id/title22"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:text="@string/accordanceCanSpamActTitle"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/text22"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/accordanceCanSpamActDetail"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/title23"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:text="@string/futureTitle"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/text23"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/futureDetail"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+
+            <TextView
+                android:id="@+id/title24"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:text="@string/contactingUsTitle"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/text24"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/contactingUsDetail"
+                android:textSize="14sp"
+                android:typeface="monospace"
+                android:textColor="@color/black"
+                android:layout_marginBottom="45dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

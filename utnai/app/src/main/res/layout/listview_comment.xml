@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_marginTop="1dp"
+    android:background="#eaf5f5f5"
+    android:elevation="2dp">
+
+    <ImageView
+        android:id="@+id/image_comment"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:paddingBottom="1dp"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:paddingTop="1dp"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:id="@+id/space_text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/image_comment"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/name_user_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/image_comment"
+            android:text="name"
+            android:typeface="monospace"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:layout_weight="0.8"/>
+
+        <TextView
+            android:id="@+id/date_user_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text=" "
+            android:gravity="end"
+            android:typeface="monospace"
+            android:textColor="@color/grey"
+            android:layout_weight="1.2"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_comment_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/space_text_name"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/image_comment"
+        android:background="@color/transparent"
+        android:typeface="monospace"
+        android:text=""
+        android:textColor="@color/grey"
+        android:textSize="12sp" />
+
+</RelativeLayout>

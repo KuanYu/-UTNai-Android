@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context="com.butions.utnai.MyFriend"
+    android:clickable="true"
+    android:paddingBottom="45dp"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:id="@+id/layout_tap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tab_friends"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="My Friends"
+            android:padding="5dp"
+            android:textSize="13sp"
+            android:typeface="monospace"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/tab_pink"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tab_requests"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Requests"
+            android:padding="5dp"
+            android:textSize="13sp"
+            android:typeface="monospace"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/tab_grey"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_tap_list_friends"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:layout_below="@+id/layout_tap">
+
+        <EditText
+            android:id="@+id/text_search"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="15dp"
+            android:typeface="monospace"
+            android:paddingRight="10dp"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/Black"
+            android:hint="Search..."
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:maxLength="20"
+            android:drawableRight="@drawable/ic_search"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:background="@drawable/bg_white_stroke_red_radia50"
+            android:elevation="4dp"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_add_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_friends_add"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            app:backgroundTint="@color/red"
+            android:visibility="visible"
+            app:elevation="4dp"/>
+
+        <ListView
+            android:id="@+id/my_list_friends"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/text_search"
+            android:divider="@null">
+        </ListView>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_tap_friends_requests"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_below="@+id/layout_tap">
+
+        <ListView
+            android:id="@+id/my_list_friends_requests"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:divider="@null">
+        </ListView>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
